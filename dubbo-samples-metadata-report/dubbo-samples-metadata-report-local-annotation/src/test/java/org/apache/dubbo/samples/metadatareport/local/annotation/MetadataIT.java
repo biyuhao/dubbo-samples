@@ -110,7 +110,7 @@ public class MetadataIT {
         Assert.assertEquals("false", parameters.get("generic"));
         Assert.assertEquals("metadatareport-local-annotaion-provider", parameters.get("application"));
         Assert.assertEquals("true", parameters.get("dynamic"));
-        Assert.assertEquals("true", parameters.get("register"));
+        Assert.assertEquals(null, parameters.get("register"));
         Assert.assertEquals("true", parameters.get("anyhost"));
         Assert.assertEquals(AnnotationService.class.getCanonicalName(), definition.getCanonicalName());
         List<MethodDefinition> methods = definition.getMethods();

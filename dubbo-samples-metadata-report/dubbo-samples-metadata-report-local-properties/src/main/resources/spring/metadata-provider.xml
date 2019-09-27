@@ -25,7 +25,7 @@
 
     <dubbo:application name="metadatareport-local-properties-provider2"/>
 
-    <dubbo:registry address="zookeeper://${zookeeper.address:127.0.0.1}:2181"/>
+    <dubbo:registry address="zookeeper://${zookeeper.address:127.0.0.1}:2181" register="true"/>
 
     <bean id="demoService" class="org.apache.dubbo.samples.metadatareport.local.properties.impl.DemoServiceImpl"/>
     <dubbo:service interface="org.apache.dubbo.samples.metadatareport.local.properties.api.DemoService"
